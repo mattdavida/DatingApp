@@ -57,7 +57,7 @@ namespace DatingApp.API.Controllers
                 return Unauthorized();
             }
             // start building token
-            // token needs two claims 
+            // token needs two claims  
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, userFromRepo.Id.ToString()),
